@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tim &amp; Dosen Pembimbing | MeetZy</title>
+  <link rel="stylesheet" href="meetzy-ajakan.css">
+  <script src="app.js" defer></script>
+  <style>
+    html { overflow-y: scroll; }
+    body { margin: 0; background: #F4EFE6; font-family: Inter, Arial, sans-serif; }
+    #meetzy-frame { position: relative; width: 1440px; height: 900px; overflow: hidden; }
+    .mz-header { position: relative; height: 72px; background: #6B1D2A; }
+    .mz-logo { position: absolute; top: 16px; left: 108px; display: flex; align-items: center; width: 56px; height: 40px; border-radius: 12px; background: #BFD02E; color: white; font-size: 22px; font-weight: 700; }
+    .mz-header .meetzy-search { position: absolute; top: 16px; left: 448px; width: 544px; height: 40px; border-radius: 8px; background: #FFFCF6; }
+    .meetzy-profile-link { position: absolute; top: 16px; left: 1344px; width: 40px; height: 40px; display: grid; place-items: center; border-radius: 8px; background: #F2E1E4; color: #6B1D2A; font-size: 14px; font-weight: 700; text-decoration: none; }
+    .mz-nav { height: 56px; box-sizing: border-box; padding: 8px 56px; display: flex; gap: 8px; background: #6B1D2A; }
+    .mz-nav a { display: grid; place-items: center; height: 40px; border-radius: 8px; background: #FFFCF6; color: #30201F; font-size: 14px; font-weight: 700; text-decoration: none; }
+    .mz-nav a[aria-current] { background: #F2E1E4; color: #6B1D2A; }
+    .mz-page-title { position: absolute; left: 56px; top: 152px; margin: 0; color: #30201F; font-size: 34px; }
+    .mz-page-desc { position: absolute; left: 56px; top: 202px; margin: 0; color: #645252; }
+  </style>
+</head>
+<body>
+  <div id="meetzy-frame">
+    <header class="mz-header">
+      <span class="mz-logo">MeetZy</span>
+      <form class="meetzy-search" action="cari-partner.html">
+        <input name="q" type="search" placeholder="Cari partner, lomba, atau keahlian" aria-label="Cari partner, lomba, atau keahlian">
+        <button type="submit">Cari</button>
+      </form>
+      <a href="profil.html" class="meetzy-profile-link" aria-label="Buka Profil Saya">PL</a>
+    </header>
+
+    <nav class="mz-nav" aria-label="Navigasi utama">
+      <a href="index.html" style="width:104px">Beranda</a>
+      <a href="cari-partner.html" style="width:128px">Cari Partner</a>
+      <a href="profil.html" style="width:96px">Profil</a>
+      <a href="ajakan.html" style="width:152px">Ajakan &amp; Status</a>
+      <a href="tim-dosen.html" style="width:128px" aria-current="page">Tim &amp; Dosen</a>
+    </nav>
+
+    <main>
+      <h1 class="mz-page-title">Tim &amp; Dosen Pembimbing</h1>
+      <p class="mz-page-desc">Lihat anggota tim dan tentukan dosen pembimbing.</p>
+      <div id="panel-tim" style="position:absolute; left:56px; top:264px; width:864px; height:224px; background:#FFFCF6; border-radius:16px; outline:1px solid #E4D8CF;">
+        <div style="position:absolute; left:24px; top:26px; color:#30201F; font-size:23px; font-weight:700;">Kamu belum tergabung dalam tim</div>
+        <div style="position:absolute; left:24px; top:72px; color:#645252;">Daftar dosen pembimbing tersedia setelah kamu bergabung dengan tim.</div>
+        <a href="cari-partner.html" style="position:absolute; left:24px; top:132px; width:168px; height:40px; display:grid; place-items:center; background:#6B1D2A; border-radius:8px; color:#FFFCF6; font-size:14px; font-weight:700; text-decoration:none;">Cari Partner</a>
+      </div>
+    </main>
+  </div>
+  <script src="meetzy-desktop.js"></script>
+</body>
+</html>

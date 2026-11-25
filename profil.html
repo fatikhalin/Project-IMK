@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil | MeetZy</title>
+  <style>
+    body { margin: 0; background: #F4EFE6; font-family: Inter, Arial, sans-serif; }
+    html { overflow-y: scroll; }
+  </style>
+<link rel="stylesheet" href="meetzy-ajakan.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+  <div id="meetzy-frame" style="width: 1440px; min-height: 900px; position: relative; background: #F4EFE6; overflow: hidden">
+  <div style="width: 1440px; height: 72px; left: 0px; top: 0px; position: absolute; background: #6B1D2A">
+    <form class="meetzy-search" action="cari-partner.html" style="width: 544px; height: 40px; left: 448px; top: 16px; position: absolute; background: #FFFCF6; border-radius: 8px; outline: 1px #E4D8CF solid; outline-offset: -1px"><input name="q" type="search" placeholder="Cari partner, lomba, atau keahlian" aria-label="Cari partner, lomba, atau keahlian"><button type="submit">Cari</button></form>
+    <a href="profil.html" aria-label="Buka Profil Saya" title="Profil Saya" class="meetzy-profile-link" style="width: 40px; height: 40px; left: 1344px; top: 16px; position: absolute; background: #F2E1E4; border-radius: 8px"><div style="left: 10px; top: 11.50px; position: absolute; color: #6B1D2A; font-size: 14px; font-family: Inter, Arial, sans-serif; font-weight: 700; word-wrap: break-word">PL</div></a>
+    <div style="width: 104px; height: 40px; left: 108px; top: 16px; position: absolute">
+      <div style="width: 56px; height: 40px; left: 0px; top: 0px; position: absolute; background: #BFD02E; border-radius: 12px"></div>
+      <div style="left: 0px; top: 6.50px; position: absolute; color: white; font-size: 22px; font-family: Inter, Arial, sans-serif; font-weight: 700; word-wrap: break-word">MeetZy</div>
+    </div>
+  </div>
+  <nav aria-label="Navigasi utama" style="width: 1440px; height: 56px; left: 0px; top: 72px; position: absolute; background: #6B1D2A">
+    <a href="index.html" style="width: 104px; height: 40px; left: 56px; top: 8px; position: absolute; background: #FFFCF6; border-radius: 8px; outline: 1px #E4D8CF solid; outline-offset: -1px; text-decoration: none"><div style="left: 23.50px; top: 11.50px; position: absolute; color: #30201F; font-size: 14px; font-family: Inter, Arial, sans-serif; font-weight: 700; word-wrap: break-word">Beranda</div></a>
+    <a href="cari-partner.html" style="width: 128px; height: 40px; left: 168px; top: 8px; position: absolute; background: #FFFCF6; outline: 1px #E4D8CF solid; outline-offset: -1px; border-radius: 8px; text-decoration: none"><div style="left: 22.50px; top: 11.50px; position: absolute; color: #30201F; font-size: 14px; font-family: Inter, Arial, sans-serif; font-weight: 700; word-wrap: break-word">Cari Partner</div></a>
+    <a href="profil.html" aria-current="page" style="width: 96px; height: 40px; left: 304px; top: 8px; position: absolute; background: #F2E1E4; border-radius: 8px; text-decoration: none"><div style="left: 29.50px; top: 11.50px; position: absolute; color: #6B1D2A; font-size: 14px; font-family: Inter, Arial, sans-serif; font-weight: 700; word-wrap: break-word">Profil</div></a>
+    <a href="ajakan.html" style="width: 152px; height: 40px; left: 408px; top: 8px; position: absolute; background: #FFFCF6; border-radius: 8px; outline: 1px #E4D8CF solid; outline-offset: -1px; text-decoration: none"><div style="left: 21.50px; top: 11.50px; position: absolute; color: #30201F; font-size: 14px; font-family: Inter, Arial, sans-serif; font-weight: 700; word-wrap: break-word">Ajakan & Status</div></a>
+    <a href="tim-dosen.html" style="width: 128px; height: 40px; left: 568px; top: 8px; position: absolute; background: #FFFCF6; border-radius: 8px; outline: 1px #E4D8CF solid; outline-offset: -1px; text-decoration: none"><div style="left: 21px; top: 11.50px; position: absolute; color: #30201F; font-size: 14px; font-family: Inter, Arial, sans-serif; font-weight: 700; word-wrap: break-word">Tim & Dosen</div></a>
+  </nav>
+<main class="mz-layout">
+  <h1>Profil &amp; Portofolio</h1>
+  <p class="mz-intro">Kenali keahlian, pengalaman, dan portofolio calon rekan tim.</p>
+  <div class="mz-columns">
+    <div class="mz-stack">
+      <section class="mz-panel"><h2>Identitas</h2>
+        <div class="mz-identity"><span class="mz-avatar" data-candidate="2">PL</span><div><strong data-candidate="0">Princess Leonor</strong><p data-candidate="1">Teknologi Informasi · Angkatan 2024</p></div></div>
+      </section>
+      <section class="mz-panel"><h2>Keahlian</h2><div id="profil-keahlian" class="mz-tags"></div></section>
+      <section class="mz-panel"><h2>Portofolio</h2><div id="portofolio-grid" class="mz-project-grid"></div></section>
+      <div class="mz-two">
+        <section class="mz-panel"><h2>Riwayat Lomba</h2><p data-candidate="7">Peserta UI/UX Challenge</p></section>
+        <section class="mz-panel"><h2>Organisasi</h2><p data-candidate="8">Komunitas teknologi dan desain kampus</p></section>
+      </div>
+    </div>
+    <aside class="mz-stack">
+      <section class="mz-panel mz-accent"><h2>Kartu Aksi</h2><p id="skor-profil" hidden></p><p>Minat · <strong data-candidate="4">UI/UX Design</strong></p>
+        <p>Ketersediaan · <strong data-candidate="5">Akhir pekan</strong></p>
+        <div class="mz-actions"><div id="aksi-profil"></div><div id="aksi-dosen"></div><button id="simpan-kandidat" type="button" class="mz-secondary" hidden>Simpan Kandidat</button>
+        <a class="mz-secondary" href="cari-partner.html">Kembali ke Pencarian</a></div>
+      </section>
+      <section id="profil-sendiri" class="mz-panel" hidden><h2>Profil Saya</h2><a class="mz-secondary" href="profil.html?edit=1">Edit Profil Saya</a></section>
+    </aside>
+  </div>
+</main>
+</div>
+<dialog id="detail-portofolio" class="meetzy-dialog" aria-labelledby="judul-portofolio">
+  <h2 id="judul-portofolio">Portofolio</h2>
+  <p id="pemilik-portofolio"></p>
+  <article class="meetzy-project">
+    <h3 id="nama-proyek"></h3>
+    <p id="deskripsi-proyek"></p>
+    <dl>
+      <dt>Peran</dt><dd id="peran-proyek"></dd>
+      <dt>Hasil proyek</dt><dd id="hasil-proyek"></dd>
+    </dl>
+  </article>
+  <form method="dialog"><menu><button class="meetzy-action">Tutup</button></menu></form>
+</dialog>
+<script src="meetzy-desktop.js"></script>
+</body>
+</html>

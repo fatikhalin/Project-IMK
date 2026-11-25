@@ -1,0 +1,89 @@
+.meetzy-action { font: inherit; font-weight: 700; padding: 10px 16px; border: 1px solid #6B1D2A; border-radius: 8px; background: #6B1D2A; color: #FFFCF6; cursor: pointer; }
+.meetzy-dialog { width: min(440px, 85vw); box-sizing: border-box; border: 1px solid #E4D8CF; border-radius: 16px; padding: 24px; background: #FFFCF6; color: #30201F; }
+.meetzy-dialog::backdrop { background: #30201F99; }
+.meetzy-dialog textarea { width: 100%; box-sizing: border-box; font: inherit; margin: 8px 0; }
+.meetzy-dialog menu { padding: 0; display: flex; gap: 8px; justify-content: flex-end; }
+.meetzy-dialog p { white-space: pre-wrap; overflow-wrap: anywhere; }
+.meetzy-invite-list { position: absolute; inset: 65px 24px 20px; overflow: auto; margin: 0; padding: 0; list-style: none; }
+.meetzy-invite-list li { border-top: 1px solid #E4D8CF; padding: 12px 0; }
+.meetzy-invite-list p { margin: 4px 0 8px; overflow-wrap: anywhere; }
+.meetzy-control { box-sizing: border-box; border: 1px solid #E4D8CF; color: #30201F; cursor: pointer; font: 700 14px Inter, Arial, sans-serif; }
+select.meetzy-control { padding: 0 12px; }
+.meetzy-invite-tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.meetzy-invite-tools button, .meetzy-invite-tools select { font: inherit; padding: 4px 8px; }
+.meetzy-dialog input, .meetzy-dialog select { display: block; width: 100%; box-sizing: border-box; padding: 8px; margin: 6px 0 14px; font: inherit; }
+.meetzy-team { box-sizing: border-box; padding: 24px; height: auto !important; min-height: 340px; max-height: 580px; overflow: auto; color: #30201F; }
+.meetzy-team h2 { margin-top: 0; }
+.meetzy-action:disabled, .meetzy-control:disabled { opacity: .65; cursor: default; }
+.meetzy-search { display: flex; align-items: stretch; }
+.meetzy-search input { min-width: 0; flex: 1; border: 0; border-radius: 8px 0 0 8px; padding: 0 14px; background: transparent; color: #30201F; font: inherit; }
+.meetzy-search button { margin: 4px; padding: 0 14px; border: 0; border-radius: 6px; background: #6B1D2A; color: #FFFCF6; font: inherit; cursor: pointer; }
+.meetzy-published { position: absolute; top: 150px; left: 24px; right: 24px; bottom: 18px; padding-top: 10px; border-top: 1px solid #E4D8CF; overflow: auto; overflow-wrap: anywhere; color: #30201F; }
+.meetzy-published ul { margin: 6px 0; padding-left: 20px; }
+.meetzy-onboarding { position: absolute; left: 56px; top: 728px; width: 1328px; box-sizing: border-box; padding: 20px 24px; border: 1px solid #E4D8CF; border-radius: 16px; background: #FFFCF6; color: #30201F; display: flex; justify-content: space-between; align-items: center; }
+.meetzy-onboarding[hidden] { display: none; }
+.meetzy-onboarding p { margin: 8px 0 0; }
+.meetzy-onboarding a { text-decoration: none; }
+.meetzy-status { display: inline-block; margin-left: 10px; padding: 3px 9px; border-radius: 12px; background: #F2E1E4; color: #6B1D2A; font-weight: 700; font-size: 13px; }
+.meetzy-status[data-status="Diterima"] { background: #E3F4EA; color: #146447; }
+.meetzy-status[data-status="Terkirim"], .meetzy-status[data-status="Dilihat"] { background: #BFD02E; color: #30201F; }
+
+.meetzy-profile-link:focus-visible { outline: 3px solid #BFD02E; outline-offset: 3px; }
+.meetzy-profile-status { display:grid; place-items:center; height:100%; color:#146447; background:#E3F4EA; border-radius:8px; font-weight:700; }
+.meetzy-progress { color:#645252; font-size:13px; }
+.meetzy-progress:empty { display:none; }
+.meetzy-progress [aria-current] { color:#6B1D2A; text-decoration:underline; }
+.meetzy-toast { position:fixed; right:24px; bottom:24px; padding:14px 20px; border-radius:10px; background:#192741; color:white; z-index:10; font-weight:700; }
+#lihat-portofolio { position: absolute; top: 168px; right: 24px; padding: 7px 12px; font-size: 14px; }
+.meetzy-project { border: 1px solid #E4D8CF; border-radius: 12px; padding: 16px; }
+.meetzy-project h3 { margin-top: 0; }
+.meetzy-project dt { font-weight: 700; }
+.meetzy-project dd { margin: 4px 0 12px; }
+.meetzy-tracker-panel { height:580px !important; }
+.meetzy-tracker-filters { position:absolute; top:64px; left:24px; display:flex; gap:8px; }
+.meetzy-tracker-filters button { padding:8px 14px; background:#FFFCF6; color:#30201F; border:1px solid #E4D8CF; }
+.meetzy-tracker-filters button[data-status="Terkirim"] { background:#E6F4FB; color:#075985; }
+.meetzy-tracker-filters button[data-status="Diterima"] { background:#E3F4EA; color:#146447; }
+.meetzy-tracker-filters button[aria-pressed="true"] { outline:2px solid #6B1D2A; outline-offset:1px; }
+.meetzy-tracker-panel .meetzy-invite-list { inset:114px 24px 20px; }
+.meetzy-tracker-panel .meetzy-tracker-card { box-sizing:border-box; margin:0 0 12px; padding:16px; border:1px solid #E4D8CF; border-radius:12px; background:#FFF; color:#30201F; }
+.meetzy-tracker-card .meetzy-tracker-context { color:#645252; font-size:14px; }
+.meetzy-tracker-steps { display:grid; grid-template-columns:repeat(3,1fr); list-style:none; padding:0; margin:16px 0; max-width:600px; }
+.meetzy-tracker-panel .meetzy-tracker-steps li { position:relative; display:grid; justify-items:center; gap:8px; padding:0; border:0; font-size:13px; }
+.meetzy-tracker-steps li:not(:first-child)::before { content:""; position:absolute; top:8px; right:50%; width:100%; height:2px; background:#E4D8CF; }
+.meetzy-tracker-steps li.is-complete::before { background:#6B1D2A; }
+.meetzy-tracker-dot { position:relative; z-index:1; width:16px; height:16px; box-sizing:border-box; border-radius:50%; border:1px solid #D7C6C6; background:#F4EFE6; text-align:center; font:700 11px/14px Arial,sans-serif; }
+.is-complete .meetzy-tracker-dot { background:#6B1D2A; color:white; border-color:#6B1D2A; }
+.meetzy-tracker-steps [aria-current] { font-weight:700; color:#6B1D2A; }
+.meetzy-tracker-message { color:#645252; }
+.meetzy-tracker-empty { position:absolute; top:114px; left:24px; color:#645252; }
+.mz-layout { margin: 146px 56px 0; padding-bottom: 32px; }
+.mz-layout h1 { margin: 0 0 12px; font-size: 30px; color: #30201F; }
+.mz-intro { margin: 0 0 14px; padding: 10px 16px; border-radius: 10px; background: #F2E1E4; color: #6B1D2A; }
+.mz-columns { display: grid; grid-template-columns: minmax(0,1fr) 286px; gap: 16px; align-items: start; }
+.mz-stack { display: grid; gap: 14px; min-width: 0; }
+.mz-panel { padding: 16px; border: 1px solid #E4D8CF; border-radius: 14px; background: #FFFCF6; color: #30201F; }
+.mz-panel h2 { margin: 0 0 12px; padding-left: 8px; border-left: 3px solid #6B1D2A; font-size: 17px; }
+.mz-panel p { margin: 8px 0; }
+.mz-accent { border-top: 3px solid #6B1D2A; }
+.mz-identity, .mz-onboard { display: flex; align-items: center; gap: 12px; }
+.mz-onboard { justify-content: space-between; }
+.mz-avatar { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #F2E1E4; color: #6B1D2A; font-weight: 700; }
+.mz-tags, .mz-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.mz-actions { flex-direction: column; }
+.mz-actions .meetzy-profile-status { min-height: 38px; }
+.mz-tags span { padding: 4px 10px; border-radius: 20px; background: #F2E1E4; color: #6B1D2A; }
+.mz-project-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.mz-two, .mz-stat-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+.mz-project, .mz-stat-grid > div { display: grid; gap: 7px; border: 1px solid #E4D8CF; border-radius: 10px; padding: 11px; background: #FFF; color: #30201F; text-align: left; font: inherit; }
+button.mz-project { cursor: pointer; }
+.mz-project-art { display: grid; place-items: center; min-height: 62px; background: #F2E1E4; color: #6B1D2A; border-radius: 7px; font-size: 26px; }
+.mz-secondary { display: inline-block; box-sizing: border-box; padding: 8px 11px; border: 1px solid #E4D8CF; border-radius: 8px; color: #6B1D2A; background: #FFFCF6; font: inherit; font-weight: 700; text-decoration: none; text-align: center; cursor: pointer; }
+.mz-project .mz-secondary { justify-self: start; }
+.mz-need-form { display: grid; gap: 9px; }
+.mz-need-form input, .mz-need-form select { display: block; box-sizing: border-box; width: 100%; font: inherit; padding: 7px; margin-top: 4px; border: 1px solid #E4D8CF; border-radius: 7px; background: #FFF; }
+.mz-need-form p:empty { display: none; }
+.mz-recents, .mz-deadlines { padding: 0; margin: 10px 0; list-style: none; }
+.mz-recents li { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; border-bottom: 1px solid #E4D8CF; }
+.mz-deadlines li + li { margin-top: 8px; }
+.mz-layout [hidden] { display: none !important; }
